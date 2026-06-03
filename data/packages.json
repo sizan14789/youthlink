@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Connect",
+    "description": "Perfect for everyday browsing, social media, and staying connected.",
+    "speed": "5 Mbps",
+    "price": 600,
+    "offerPrice": 500,
+    "duration": "30 Days"
+  },
+  {
+    "id": 2,
+    "name": "Turbo Stream",
+    "description": "Smooth HD streaming and faster downloads for modern households.",
+    "speed": "10 Mbps",
+    "price": 900,
+    "offerPrice": 800,
+    "duration": "30 Days"
+  },
+  {
+    "id": 3,
+    "name": "Power User",
+    "description": "Built for multitasking, online classes, and remote work.",
+    "speed": "20 Mbps",
+    "price": 1400,
+    "offerPrice": 1200,
+    "duration": "30 Days"
+  },
+  {
+    "id": 4,
+    "name": "Ultra Gaming",
+    "description": "Low-latency performance for competitive gaming and live streaming.",
+    "speed": "50 Mbps",
+    "price": 2200,
+    "offerPrice": 1800,
+    "duration": "30 Days"
+  },
+  {
+    "id": 5,
+    "name": "Infinity Max",
+    "description": "Lightning-fast internet for power users, creators, and large families.",
+    "speed": "100 Mbps",
+    "price": 3500,
+    "offerPrice": 2800,
+    "duration": "30 Days"
+  }
+]
