@@ -2,7 +2,7 @@ import data from "@/data/packages.json";
 
 export default function PackagesSection() {
   return (
-    <div className="wrapper flex flex-wrap justify-center gap-6 my-20">
+    <div className="wrapper flex flex-wrap justify-center gap-6 my-20  ">
       {data.map(
         ({ id, name, description, price, offerPrice, speed, duration }) => {
           return (
