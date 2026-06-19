@@ -6,7 +6,7 @@ import { BsLinkedin } from "react-icons/bs";
 export default function Footer() {
   return (
     <>
-      <div className="flex flex-col min-w-svw border-t border-gray-300">
+      <div className="flex flex-col min-w-svw border-t border-gray-300 mt-30  ">
         <div className="wrapper flex justify-between pt-14! pb-20! mt-auto min-h-40 gap-20">
           <div className="flex flex-col flex-2">
             <div className="mb-6">
@@ -19,20 +19,20 @@ export default function Footer() {
                 connectivity backed by trusted local support.
               </p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
               <Link href="#">
                 <FaFacebook className="text-2xl" />
               </Link>
               <Link href="#">
-                <FaWhatsapp className="text-2xl" />
+                <FaWhatsapp className="text-[1.6rem]" />
               </Link>
-              <Link href="#">
+              {/* <Link href="#">
                 <BsLinkedin className="text-2xl" />
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="flex flex-1 flex-col">
-            <h2 className="text-2xl mb-2">Contact</h2>
+            <h2 className="text-2xl mb-2 font-mono">Contact</h2>
             <p className="txt">Hotline: 0199999999</p>
             <a href="mailto:sizanalt@example.com" className="txt">
               sizanalt@example.com

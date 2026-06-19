@@ -1,7 +1,7 @@
 export default function Terms() {
   return (
     <div className="wrapper mt-8 mb-20">
-      <h2 className="text-2xl mb-4">Terms and Conditions</h2>
+      <h2 className="text-4xl mb-4">Terms and Conditions</h2>
       <p className="text-gray-700">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sed at
         consequatur necessitatibus quos quaerat? Adipisci quia ad id animi

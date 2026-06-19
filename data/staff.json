@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Ahmed Korim Vuiya",
+    "image_url": "/assets/pfp_people.jpg",
+    "role": "Network Engineer",
+    "age": 29,
+    "joining_year": 2021
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "image_url": "/assets/pfp_people.jpg",
+    "role": "Customer Support Executive",
+    "age": 26,
+    "joining_year": 2023
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "image_url": "/assets/pfp_people.jpg",
+    "role": "System Administrator",
+    "age": 34,
+    "joining_year": 2019
+  },
+  {
+    "id": 4,
+    "name": "Farzana Akter",
+    "image_url": "/assets/pfp_people.jpg",
+    "role": "Marketing Manager",
+    "age": 31,
+    "joining_year": 2020
+  },
+  {
+    "id": 5,
+    "name": "Sabbir Hossain",
+    "image_url": "/assets/pfp_people.jpg",
+    "role": "Technical Support Specialist",
+    "age": 27,
+    "joining_year": 2022
+  }
+]

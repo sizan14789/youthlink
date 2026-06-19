@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="wrapper mt-8 mb-20">
-      <h2 className="text-2xl mb-4">About Us</h2>
+      <h2 className="text-4xl mb-4 font-mono">About Us</h2>
       <p className="text-gray-700">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sed at
         consequatur necessitatibus quos quaerat? Adipisci quia ad id animi
