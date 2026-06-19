@@ -1,16 +1,15 @@
 import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
     <>
-      <div className="flex flex-col min-w-svw border-t border-gray-300 mt-30  ">
-        <div className="wrapper flex justify-between pt-14! pb-20! mt-auto min-h-40 gap-20">
+      <div className="flex flex-col min-w-svw border-t border-gray-300 mt-auto ">
+        <div className="wrapper flex justify-between pt-14! pb-20! mt-auto min-h-40 gap-10 md:gap-20">
           <div className="flex flex-col flex-2">
             <div className="mb-6">
-              <Link href="/" className="text-4xl font-mono">
+              <Link href="/" className="text-3xl font-mono">
                 YouthLink
               </Link>
               <p className="txt mt-2">

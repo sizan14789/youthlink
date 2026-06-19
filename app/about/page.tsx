@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <div className="wrapper mt-8 mb-20">
@@ -24,6 +26,11 @@ export default function About() {
       </p>
       <p className="text-gray-700 ">Google Map Location: </p>
       <p className="text-gray-700 ">Hotline: 0199999999</p>
+      <Link href="/">
+        <button className="button-secondary rounded-md! h-14! w-40! text-[14px] mt-4 ">
+          Home
+        </button>
+      </Link>
     </div>
   );
 }

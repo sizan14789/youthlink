@@ -6,7 +6,7 @@ export default function PackagesSection() {
       {data.map(
         ({ id, name, description, price, offerPrice, speed, duration }) => {
           return (
-            <div className="border p-6 w-60" key={id}>
+            <div className="card-border p-6 w-60" key={id}>
               <h2 className="text-4xl font-mono">{name}</h2>
               <p className="txt text-[1rem]! mt-2">{description}</p>
               <h2 className="mt-4 text-xl">
