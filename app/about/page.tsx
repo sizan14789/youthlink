@@ -1,9 +1,17 @@
 import Link from "next/link";
+import { FaClock, FaLocationArrow } from "react-icons/fa";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { IoMdCall, IoMdMail } from "react-icons/io";
+import { MdLocationOn, MdOutlineRoundaboutRight } from "react-icons/md";
 
 export default function About() {
   return (
     <div className="wrapper mt-8 mb-20">
-      <h2 className="text-4xl mb-4 font-mono">About Us</h2>
+      <h2 className="text-4xl mb-4 font-mono flex items-center gap-2">
+        {" "}
+        <MdOutlineRoundaboutRight />
+        About Us
+      </h2>
       <p className="text-gray-700">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sed at
         consequatur necessitatibus quos quaerat? Adipisci quia ad id animi
@@ -20,14 +28,28 @@ export default function About() {
         voluptates quia, cum ex nam, doloribus a? Id quisquam doloremque quaerat
         numquam t
       </p>
-      <p className="text-gray-700 mt-8">Office Hours: 10AM - 8PM</p>
-      <p className="text-gray-700 ">
+      <p className="text-gray-700 mt-8 flex gap-2 items-center">
+        <FaClock className="inline" /> Office Hours: 10AM - 8PM
+      </p>
+      <p className="text-gray-700 flex gap-2 items-center">
+        <FaLocationArrow />
         Location: College Gate, Konabari, Gazipur
       </p>
-      <p className="text-gray-700 ">Google Map Location: </p>
-      <p className="text-gray-700 ">Hotline: 0199999999</p>
+      <p className="text-gray-700 flex gap-2 items-center">
+        <MdLocationOn />
+        Google Map Location:
+      </p>
+      <p className="text-gray-700 flex gap-2 items-center">
+        <IoMdMail />
+        Mail: ferdows@gmail.com
+      </p>
+      <p className="text-gray-700 flex gap-2 items-center">
+        <IoMdCall />
+        Hotline: 0199999999
+      </p>
       <Link href="/">
-        <button className="button-secondary rounded-md! h-14! w-40! text-[14px] mt-4 ">
+        <button className="button-secondary rounded-md! h-14! w-40! mt-4 flex items-center justify-center gap-2">
+          <FaArrowLeftLong />
           Home
         </button>
       </Link>

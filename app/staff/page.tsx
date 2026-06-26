@@ -1,5 +1,6 @@
 import staffData from "@/data/staff.json";
 import Image from "next/image";
+import { IoMdPerson } from "react-icons/io";
 
 type staff_data = {
   id: number;
@@ -14,7 +15,8 @@ export default function Staff() {
   return (
     <>
       <div className="wrapper mt-8 mb-20">
-        <h2 className="text-4xl mb-4 text-center md:text-start! font-mono">
+        <h2 className="text-4xl mb-4 text-center md:text-start! font-mono flex items-center gap-2">
+          <IoMdPerson />
           Staff
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
