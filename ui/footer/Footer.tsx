@@ -21,7 +21,12 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex gap-4 items-center">
-              <Link href="#">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61585651837780"
+                target="_blank"
+                rel="noopener noreferrer"
+                prefetch={false}
+              >
                 <FaFacebook className="text-2xl" />
               </Link>
               <Link href="#">

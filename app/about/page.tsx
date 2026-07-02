@@ -2,13 +2,18 @@ import Link from "next/link";
 import { FaClock, FaLocationArrow } from "react-icons/fa";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { IoMdCall, IoMdMail } from "react-icons/io";
-import { MdLocationOn, MdOutlineRoundaboutRight } from "react-icons/md";
+import { MdOutlineRoundaboutRight } from "react-icons/md";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "About page for YouthLink Network",
+};
 
 export default function About() {
   return (
     <div className="wrapper mt-8 mb-20">
       <h2 className="text-4xl mb-4 font-mono flex items-center gap-2">
-        {" "}
         <MdOutlineRoundaboutRight />
         About Us
       </h2>
@@ -36,10 +41,6 @@ export default function About() {
         Location: College Gate, Konabari, Gazipur
       </p>
       <p className="text-gray-700 flex gap-2 items-center">
-        <MdLocationOn />
-        Google Map Location:
-      </p>
-      <p className="text-gray-700 flex gap-2 items-center">
         <IoMdMail />
         Mail: ferdows@gmail.com
       </p>
@@ -47,12 +48,15 @@ export default function About() {
         <IoMdCall />
         Hotline: 0199999999
       </p>
-      <Link href="/">
-        <button className="button-secondary rounded-md! h-14! w-40! mt-4 flex items-center justify-center gap-2">
+      <button className="button-secondary rounded-md! h-14! w-40! mt-4 ">
+        <Link
+          href="/"
+          className="w-full h-full flex items-center justify-center gap-2"
+        >
           <FaArrowLeftLong />
           Home
-        </button>
-      </Link>
+        </Link>
+      </button>
     </div>
   );
 }

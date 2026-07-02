@@ -2,9 +2,12 @@ import data from "@/data/packages.json";
 import { BsLightningChargeFill } from "react-icons/bs";
 import { FaCartShopping } from "react-icons/fa6";
 
-export default function PackagesSection() {
+export default function PackagesSection({ reference }: { reference: any }) {
   return (
-    <div className="wrapper flex flex-wrap justify-center gap-6 my-20  ">
+    <div
+      className="wrapper flex flex-wrap justify-center gap-6 my-20"
+      ref={reference}
+    >
       {data.map(
         ({ id, name, description, price, offerPrice, speed, duration }) => {
           return (
@@ -17,7 +20,7 @@ export default function PackagesSection() {
               </h2>
               <div className="mt-3 flex gap-2 items-end">
                 <h2 className="">{offerPrice}tk</h2>
-                <p className="line-through txt">{price}tk</p>
+                <p className="line-through txt mb-[0.5px]">{price}tk</p>
               </div>
               <button className="button-primary rounded-md! h-11! w-36! text-[14px] mt-4 flex justify-center items-center gap-2">
                 Buy Now <FaCartShopping className="text-base" />

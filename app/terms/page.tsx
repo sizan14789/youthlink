@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms adn Condition",
+  description: "Terms and condition page for YouthLink Network",
+};
+
 export default function Terms() {
   return (
     <div className="wrapper mt-8 mb-20">

@@ -1,6 +1,12 @@
 import staffData from "@/data/staff.json";
 import Image from "next/image";
 import { IoMdPerson } from "react-icons/io";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Staff",
+  description: "Staff page for YouthLink Network",
+};
 
 type staff_data = {
   id: number;
