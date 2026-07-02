@@ -12,8 +12,8 @@ export default function PackagesSection({
   const { whatsapp_number } = owner[0];
 
   return (
-    <div className="wrapper mb-30">
-      <div className="text-center mb-8" ref={reference}>
+    <div className="wrapper mb-30 pt-12!" ref={reference}>
+      <div className="text-center mb-8">
         <h2 className="text-4xl font-bold">Our Packages</h2>
         <p className="mt-3 txt">Choose the plan that best fits your needs.</p>
       </div>

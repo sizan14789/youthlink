@@ -21,8 +21,8 @@ export default function About() {
           <MdOutlineRoundaboutRight /> About Us
         </h1>
         <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-          Connecting homes, businesses, and communities with reliable,
-          high-speed internet and customer service you can depend on.
+          Proudly serving Konabari, Gazipur with fast, reliable broadband
+          internet and responsive local customer support you can count on.
         </p>
       </div>
 
@@ -30,18 +30,19 @@ export default function About() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Who We Are</h2>
           <p>
-            Youth Link Network is a dedicated Internet Service Provider focused
-            on delivering stable, affordable, and high-performance internet
-            connectivity. Whether you're attending online classes, working
-            remotely, streaming your favorite content, gaming, or managing a
-            business, we are committed to keeping you connected with a fast and
-            dependable network.
+            Youth Link Network is a local Internet Service Provider proudly
+            serving the Konabari and surrounding Gazipur areas. We believe that
+            reliable internet is essential for education, work, entertainment,
+            and staying connected with family and friends. Our goal is simple—to
+            provide stable, high-speed internet at an affordable price without
+            compromising on quality.
           </p>
           <p className="mt-4">
-            Our team continuously works to improve network performance, expand
-            coverage, and provide prompt customer support. We believe that
-            reliable internet access should be simple, accessible, and backed by
-            people who genuinely care about customer satisfaction.
+            From home users and students to small businesses and offices, we
+            work every day to ensure a smooth online experience. Our local
+            support team is always ready to assist, continuously improving our
+            network and customer service to meet the growing needs of our
+            community.
           </p>
         </div>
 
@@ -49,18 +50,19 @@ export default function About() {
           <div className="rounded-xl border p-6 shadow-sm">
             <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
             <p>
-              To provide fast, reliable, and affordable internet services while
-              delivering exceptional customer support and building long-term
-              trust with every customer we serve.
+              To deliver fast, dependable, and affordable internet services
+              throughout Konabari and nearby communities while providing honest
+              pricing, prompt support, and a customer-first experience.
             </p>
           </div>
 
           <div className="rounded-xl border p-6 shadow-sm">
             <h3 className="text-xl font-semibold mb-3">Our Vision</h3>
             <p>
-              To become one of the most trusted internet service providers by
-              continuously improving our technology, expanding our coverage, and
-              ensuring a seamless online experience for everyone.
+              To become the most trusted local internet service provider in
+              Gazipur by continuously expanding our coverage, improving network
+              performance, and building lasting relationships with our
+              customers.
             </p>
           </div>
         </div>
@@ -72,8 +74,8 @@ export default function About() {
             <div className="rounded-lg border p-5">
               <h3 className="font-semibold mb-2">High-Speed Internet</h3>
               <p className="text-sm">
-                Stable and fast internet packages designed for everyday use,
-                entertainment, education, and business.
+                Reliable fiber internet with stable speeds for streaming,
+                gaming, online classes, remote work, and everyday browsing.
               </p>
             </div>
 
@@ -86,34 +88,38 @@ export default function About() {
             </div>
 
             <div className="rounded-lg border p-5">
-              <h3 className="font-semibold mb-2">Reliable Support</h3>
+              <h3 className="font-semibold mb-2">FTP Entertainment Support</h3>
               <p className="text-sm">
-                Our support team is committed to resolving issues promptly and
-                assisting customers whenever they need help.
+                Enjoy access to popular BDIX FTP services including SamOnline
+                and DhakaFlix, giving you fast local access to movies, TV
+                series, games, software, and more without relying on
+                international bandwidth.
               </p>
             </div>
 
             <div className="rounded-lg border p-5">
-              <h3 className="font-semibold mb-2">Modern Infrastructure</h3>
+              <h3 className="font-semibold mb-2">Reliable Support</h3>
               <p className="text-sm">
-                We continuously invest in network improvements to ensure
-                consistent performance and dependable connectivity.
+                Our local support team responds quickly to technical issues so
+                you can get back online with minimal interruption.
               </p>
             </div>
 
             <div className="rounded-lg border p-5">
               <h3 className="font-semibold mb-2">Customer First</h3>
               <p className="text-sm">
-                Every decision we make is focused on providing a better
-                experience for our customers and community.
+                Every customer matters to us. We believe in honest
+                communication, dependable service, and long-term relationships
+                built on trust.
               </p>
             </div>
 
             <div className="rounded-lg border p-5">
               <h3 className="font-semibold mb-2">Trusted Service</h3>
               <p className="text-sm">
-                We are committed to transparency, professionalism, and building
-                lasting relationships through dependable service.
+                Our growing customer base reflects our commitment to quality
+                service, transparency, and continuous improvement in everything
+                we do.
               </p>
             </div>
           </div>
@@ -122,12 +128,13 @@ export default function About() {
         <div className="rounded-xl bg-gray-50 border p-8">
           <h2 className="text-2xl font-semibold mb-3">Our Commitment</h2>
           <p>
-            At Youth Link Network, our goal extends beyond simply providing
-            internet access. We aim to create meaningful connections by
-            delivering reliable service, responsive support, and continuous
-            innovation. As technology evolves, we remain committed to improving
-            our network and ensuring our customers enjoy a secure, fast, and
-            uninterrupted online experience.
+            At Youth Link Network, we're more than just an internet
+            provider—we're your local connectivity partner. Whether you're
+            attending online classes, running a business, enjoying your favorite
+            movies, or gaming with friends, we're committed to delivering the
+            speed, stability, and support you deserve. As our community grows,
+            we'll continue investing in better infrastructure and better service
+            for every customer.
           </p>
         </div>
       </div>
@@ -142,26 +149,37 @@ export default function About() {
             </span>
           </p>
 
-          <p className="flex items-center gap-3">
+          <a
+            href="https://maps.app.goo.gl/ZdnUVzFmb1nSjBBg9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:underline"
+          >
             <FaLocationArrow className="text-lg" />
             <span>
               <strong>Location:</strong> {location}
             </span>
-          </p>
+          </a>
 
-          <p className="flex items-center gap-3">
+          <a
+            href={`mailto:${mail}`}
+            className="flex items-center gap-3 hover:underline"
+          >
             <IoMdMail className="text-lg" />
             <span>
               <strong>Email:</strong> {mail}
             </span>
-          </p>
+          </a>
 
-          <p className="flex items-center gap-3">
+          <a
+            href={`tel:${hotline}`}
+            className="flex items-center gap-3 hover:underline"
+          >
             <IoMdCall className="text-lg" />
             <span>
               <strong>Hotline:</strong> {hotline}
             </span>
-          </p>
+          </a>
         </div>
 
         <div className="mt-8">
