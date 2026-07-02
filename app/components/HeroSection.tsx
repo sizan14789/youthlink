@@ -1,9 +1,13 @@
 import Link from "next/link";
+import { RefObject } from "react";
 
-export default function HeroSection({ reference }: { reference: any }) {
+export default function HeroSection({
+  reference,
+}: {
+  reference: RefObject<HTMLDivElement | null>;
+}) {
   const handleScrollToPackages = () => {
-    console.log(reference.current);
-    reference.current?.scrollIntoView({
+    reference?.current?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });

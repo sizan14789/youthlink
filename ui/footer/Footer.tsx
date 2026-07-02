@@ -3,8 +3,12 @@ import { FaFacebook, FaLocationArrow } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMdCall, IoMdMail } from "react-icons/io";
 import { RiWhatsappFill } from "react-icons/ri";
+import owner from "@/data/owner.json";
+import office from "@/data/office.json";
 
 export default function Footer() {
+  const { short_desc, location, mail, hotline } = office[0];
+
   return (
     <>
       <div className="flex flex-col min-w-svw border-t border-gray-300 mt-auto ">
@@ -14,24 +18,24 @@ export default function Footer() {
               <Link href="/" className="text-3xl font-mono">
                 YouthLink
               </Link>
-              <p className="txt mt-2">
-                Delivering fast, reliable, and affordable internet to keep you
-                connected, entertained, and productive. Experience seamless
-                connectivity backed by trusted local support.
-              </p>
+              <p className="txt mt-2">{short_desc}</p>
             </div>
             <div className="flex gap-4 items-center">
               <Link
-                href="https://www.facebook.com/profile.php?id=61585651837780"
+                href={owner[0].facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 prefetch={false}
               >
                 <FaFacebook className="text-2xl" />
               </Link>
-              <Link href="#">
+              <a
+                href={`https://wa.me/${owner[0].whatsapp_number}?text=${encodeURIComponent("Hey there, I would like to talk to someone from Youth Link Network")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaWhatsapp className="text-[1.6rem]" />
-              </Link>
+              </a>
               {/* <Link href="#">
                 <BsLinkedin className="text-2xl" />
               </Link> */}
@@ -39,37 +43,52 @@ export default function Footer() {
           </div>
           <div className="flex flex-1 flex-col">
             <h2 className="text-2xl mb-2 font-mono">Contact</h2>
-            <p className="txt flex items-center gap-2">
-              <IoMdCall />
-              Hotline: 0199999999
-            </p>
             <a
-              href="mailto:sizanalt@example.com"
-              className="txt flex items-center gap-2 text-black! hover:underline"
+              href={`tel:${hotline}`}
+              className="txt flex items-center gap-2 hover:underline"
             >
-              <IoMdMail /> sizanalt@example.com
+              <IoMdCall />
+              Hotline: {hotline}
+            </a>
+            <a
+              href={`mailto:${mail}`}
+              className="txt flex items-center gap-2 hover:underline"
+            >
+              <IoMdMail />
+              {mail}
+            </a>
+            <a
+              href={`https://wa.me/${owner[0].whatsapp_number}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="txt flex items-center gap-2 hover:underline"
+            >
+              <RiWhatsappFill />
+              WhatsApp: {owner[0].whatsapp_number}
             </a>
             <p className="txt flex items-center gap-2">
-              <RiWhatsappFill />
-              Whatsapp: 0199999999
-            </p>
-            <p className="txt flex items-center gap-2">
               <FaLocationArrow />
-              College Gate, Konabari, Gazipur
+              {location}
             </p>
 
             <Link
-              href="terms"
+              href="/terms"
               className="mt-8 txt underline hover:text-blue-700 hover:font-semibold duration-200"
             >
-              Terms and Condition
+              Terms and Conditions
             </Link>
           </div>
         </div>
+        <div className="border-t border-gray-400/50 mt-8 py-4">
+          <p className="text-center txt">
+            © {new Date().getFullYear()} Youth Link Network. All rights
+            reserved.
+          </p>
+        </div>
       </div>
-      <p className="text-center my-4 txt">
+      {/* <p className="text-center my-4 txt">
         © {new Date().getFullYear()} Youth Link Network. All rights reserved.
-      </p>
+      </p> */}
     </>
   );
 }
