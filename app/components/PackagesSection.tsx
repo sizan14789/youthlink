@@ -21,11 +21,11 @@ export default function PackagesSection({
         {data.map(
           ({ id, name, description, price, offerPrice, speed, duration }) => {
             const message = encodeURIComponent(
-              `Hello! I'd like to order the following package: \n
-            - Package: ${name} \n
-            - Speed: ${speed} \n
-            - Price: ${offerPrice} Tk \n
-            - Duration: ${duration} \n
+              `Hello! I'd like to order the following package:
+- Package: ${name}
+- Speed: ${speed}
+- Price: ${offerPrice} Tk
+- Duration: ${duration}
             `,
             );
 
