@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "desc": "Proudly serving Konabari, Gazipur with fast, reliable broadband internet and responsive local customer support you can count on."
+  },
+  "whoWeAre": {
+    "para_1": "Youth Link Network is a local Internet Service Provider proudly serving the Konabari and surrounding Gazipur areas. We believe that reliable internet is essential for education, work, entertainment, and staying connected with family and friends. Our goal is simple—to provide stable, high-speed internet at an affordable price without compromising on quality.",
+    "para_2": "From home users and students to small businesses and offices, we work every day to ensure a smooth online experience. Our local support team is always ready to assist, continuously improving our network and customer service to meet the growing needs of our community."
+  },
+  "missionVision": [
+    {
+      "id": 1,
+      "title": "Our Mission",
+      "desc": "To deliver fast, dependable, and affordable internet services throughout Konabari and nearby communities while providing honest pricing, prompt support, and a customer-first experience."
+    },
+    {
+      "id": 2,
+      "title": "Our Vision",
+      "desc": "To become the most trusted local internet service provider in Gazipur by continuously expanding our coverage, improving network performance, and building lasting relationships with our customers."
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "id": 1,
+      "title": "High-Speed Internet",
+      "desc": "Reliable fiber internet with stable speeds for streaming, gaming, online classes, remote work, and everyday browsing."
+    },
+    {
+      "id": 2,
+      "title": "Affordable Packages",
+      "desc": "Flexible plans that provide excellent value without compromising on quality or reliability."
+    },
+    {
+      "id": 3,
+      "title": "FTP Entertainment Support",
+      "desc": "Enjoy access to popular BDIX FTP services including SamOnline and DhakaFlix, giving you fast local access to movies, TV series, games, software, and more without relying on international bandwidth."
+    },
+    {
+      "id": 4,
+      "title": "Reliable Support",
+      "desc": "Our local support team responds quickly to technical issues so you can get back online with minimal interruption."
+    },
+    {
+      "id": 5,
+      "title": "Customer First",
+      "desc": "Every customer matters to us. We believe in honest communication, dependable service, and long-term relationships built on trust."
+    },
+    {
+      "id": 6,
+      "title": "Trusted Service",
+      "desc": "Our growing customer base reflects our commitment to quality service, transparency, and continuous improvement in everything we do."
+    }
+  ],
+  "commitment": {
+    "desc": "At Youth Link Network, we're more than just an internet provider—we're your local connectivity partner. Whether you're attending online classes, running a business, enjoying your favorite movies, or gaming with friends, we're committed to delivering the speed, stability, and support you deserve. As our community grows, we'll continue investing in better infrastructure and better service for every customer."
+  }
+}
