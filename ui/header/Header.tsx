@@ -4,12 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import { nav } from "@/data/header.json";
+import { useRef } from "react";
 
 export default function Header() {
   const fullPath = usePathname();
   const path = fullPath.slice(1, fullPath.length);
 
   const MotionLink = motion.create(Link);
+
+  const navRef = useRef(false);
 
   const navParent = {
     init: {},
@@ -48,8 +51,11 @@ export default function Header() {
         </motion.div>
         <motion.div
           variants={navParent}
-          initial="init"
+          initial={navRef.current ? "" : "init"}
           animate="visible"
+          onAnimationComplete={() => {
+            navRef.current = true;
+          }}
           className="flex gap-4 items-center"
         >
           {nav.map(({ id, text, url }) => {

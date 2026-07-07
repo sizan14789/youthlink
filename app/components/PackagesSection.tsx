@@ -54,10 +54,17 @@ export default function PackagesSection({
                   once: true,
                   amount: 0.5,
                 }}
+                whileHover={{
+                  scale: 1.01,
+                  y: -5,
+                  transition: {
+                    duration: 0.1,
+                  },
+                }}
                 transition={{
                   duration: 0.3,
                 }}
-                className="card-border p-7 w-66 flex flex-col duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="card-border p-7 w-66 flex flex-col hover:shadow-lg"
                 key={id}
               >
                 <h2 className="text-3xl font-mono line-clamp-2 min-h-18">
