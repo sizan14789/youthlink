@@ -27,14 +27,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 prefetch={false}
               >
-                <FaFacebook className="text-2xl" />
+                <FaFacebook className="text-2xl text-blue-700" />
               </Link>
               <a
                 href={`https://wa.me/${owner[0].whatsapp_number}?text=${encodeURIComponent("Hey there, I would like to talk to someone from YouthLink Network")}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaWhatsapp className="text-[1.6rem]" />
+                <FaWhatsapp className="text-[1.6rem] text-green-600" />
               </a>
               {/* <Link href="#">
                 <BsLinkedin className="text-2xl" />

@@ -1,8 +1,12 @@
+"use client";
+
 import data from "@/data/packages.json";
 import { BsLightningChargeFill } from "react-icons/bs";
 import { FaCartShopping, FaClockRotateLeft } from "react-icons/fa6";
 import owner from "@/data/owner.json";
 import { RefObject } from "react";
+import { motion } from "motion/react";
+import { delay } from "motion";
 
 export default function PackagesSection({
   reference,
@@ -24,7 +28,7 @@ export default function PackagesSection({
           downloads.
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-6">
+      <motion.div className="flex flex-wrap justify-center gap-6">
         {data.map(
           ({ id, name, description, price, offerPrice, speed, duration }) => {
             const message = encodeURIComponent(
@@ -37,8 +41,23 @@ export default function PackagesSection({
             );
 
             return (
-              <div
-                className="card-border p-7 w-66 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 30,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.5,
+                }}
+                transition={{
+                  duration: 0.3,
+                }}
+                className="card-border p-7 w-66 flex flex-col duration-300 hover:-translate-y-1 hover:shadow-lg"
                 key={id}
               >
                 <h2 className="text-3xl font-mono line-clamp-2 min-h-18">
@@ -64,11 +83,11 @@ export default function PackagesSection({
                 >
                   Buy Now <FaCartShopping className="text-base" />
                 </a>
-              </div>
+              </motion.div>
             );
           },
         )}
-      </div>
+      </motion.div>
     </div>
   );
 }

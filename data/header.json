@@ -1,0 +1,14 @@
+{
+  "nav": [
+    {
+      "id": 1,
+      "text": "About Us",
+      "url": "about"
+    },
+    {
+      "id": 2,
+      "text": "Staff",
+      "url": "staff"
+    }
+  ]
+}
