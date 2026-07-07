@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
-  const { office_hour, location, mail, hotline } = office[0];
+  const { office_hour, location, mail, hotline, map_url, map_embed } =
+    office[0];
 
   const { hero, whoWeAre, whyChooseUs, missionVision, commitment } = aboutData;
 
@@ -80,7 +81,7 @@ export default function About() {
           </p>
 
           <a
-            href="https://maps.app.goo.gl/ZdnUVzFmb1nSjBBg9"
+            href={map_url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 hover:underline"
@@ -121,6 +122,19 @@ export default function About() {
             Home
           </Link>
         </div>
+      </div>
+
+      <div className="mt-12 rounded-xl border bg-gray-50 p-8">
+        <h2 className="text-2xl font-semibold mb-6">Location</h2>
+        <iframe
+          src={map_embed}
+          width="100%"
+          height="400"
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full border-0"
+        />
       </div>
     </section>
   );

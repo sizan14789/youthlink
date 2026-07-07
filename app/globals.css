@@ -37,5 +37,5 @@ body {
 }
 
 .dim-bg-effect {
-  @apply bg-white hover:brightness-97 duration-200;
+  @apply bg-white hover:brightness-97 duration-150;
 }
