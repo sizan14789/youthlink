@@ -16,13 +16,13 @@ export default function Header() {
         <div className="flex gap-4 items-center">
           <Link
             href="about"
-            className={`${path == "about" ? "text-blue-700" : ""}`}
+            className={`${path == "about" ? "text-blue-700" : ""} hover:text-blue-700`}
           >
             About Us
           </Link>
           <Link
             href="staff"
-            className={`${path == "staff" ? "text-blue-700" : ""}`}
+            className={`${path == "staff" ? "text-blue-700" : ""} hover:text-blue-700`}
           >
             Staff
           </Link>

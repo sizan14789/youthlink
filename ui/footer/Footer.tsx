@@ -30,7 +30,7 @@ export default function Footer() {
                 <FaFacebook className="text-2xl" />
               </Link>
               <a
-                href={`https://wa.me/${owner[0].whatsapp_number}?text=${encodeURIComponent("Hey there, I would like to talk to someone from Youth Link Network")}`}
+                href={`https://wa.me/${owner[0].whatsapp_number}?text=${encodeURIComponent("Hey there, I would like to talk to someone from YouthLink Network")}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -81,14 +81,18 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-400/50 mt-8 py-4">
           <p className="text-center txt">
-            © {new Date().getFullYear()} Youth Link Network. All rights
-            reserved.
+            © {new Date().getFullYear()} YouthLink Network. All rights reserved
+            | Designed and Developed by{" "}
+            <a
+              href="https://github.com/sizan14789"
+              className="hover:text-blue-700"
+              target="_blank"
+            >
+              Sizan Molla
+            </a>
           </p>
         </div>
       </div>
-      {/* <p className="text-center my-4 txt">
-        © {new Date().getFullYear()} Youth Link Network. All rights reserved.
-      </p> */}
     </>
   );
 }

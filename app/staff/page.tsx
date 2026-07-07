@@ -31,7 +31,7 @@ export default function Staff() {
         <p className="mt-4 max-w-2xl mx-auto text-gray-600 leading-7">
           Behind every reliable connection is a dedicated team committed to
           delivering excellent service and customer satisfaction. Meet the
-          people who work every day to keep Youth Link Network running smoothly.
+          people who work every day to keep YouthLink Network running smoothly.
         </p>
       </div>
 
@@ -62,7 +62,7 @@ export default function Staff() {
 
                 <div className="mt-auto pt-4 border-t text-sm text-gray-500 space-y-1">
                   <p>{age} years old</p>
-                  <p>Joined Youth Link Network in {joining_year}</p>
+                  <p>Joined YouthLink Network in {joining_year}</p>
                 </div>
               </div>
             </div>

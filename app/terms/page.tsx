@@ -13,7 +13,7 @@ export default function Terms() {
       <div className="space-y-6 text-gray-700 leading-7">
         <p>
           By subscribing to any service provided by{" "}
-          <strong>Youth Link Network</strong>, you acknowledge that you have
+          <strong>YouthLink Network</strong>, you acknowledge that you have
           read, understood, and agreed to the following terms and conditions.
         </p>
 
@@ -101,7 +101,7 @@ export default function Terms() {
         <div>
           <h2 className="text-xl font-semibold mb-2">7. Changes to Terms</h2>
           <p>
-            Youth Link Network reserves the right to modify these Terms &
+            YouthLink Network reserves the right to modify these Terms &
             Conditions at any time. Updated terms will become effective upon
             publication on our official platforms.
           </p>

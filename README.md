@@ -1,6 +1,6 @@
-# Youth Link Network
+# YouthLink Network
 
-A modern, responsive landing website for **Youth Link Network**, a local Internet Service Provider (ISP) based in Konabari, Gazipur. The website showcases internet packages, company information, staff members, contact details, and provides quick communication through WhatsApp.
+A modern, responsive landing website for **YouthLink Network**, a local Internet Service Provider (ISP) based in Konabari, Gazipur. The website showcases internet packages, company information, staff members, contact details, and provides quick communicatio n through WhatsApp.
 
 ## ✨ Features
 
