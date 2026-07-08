@@ -33,6 +33,13 @@ export default function FooterContacts() {
     ...fadeUp,
   };
 
+  const colorByIcon = {
+    1: "group-hover:text-red-500",
+    2: "group-hover:text-yellow-600",
+    3: "group-hover:text-green-600",
+    4: "group-hover:text-blue-700",
+  };
+
   return (
     <motion.div
       variants={contactContainer}
@@ -58,7 +65,9 @@ export default function FooterContacts() {
             target="_blank"
             className="txt flex items-center gap-2 hover:underline group"
           >
-            <CurIcon className="group-hover:text-blue-700 hover:duration-150" />
+            <CurIcon
+              className={`${colorByIcon[id as keyof typeof colorByIcon]} hover:duration-150 text-base!`}
+            />
             {key}: {value}
           </motion.a>
         );
