@@ -1,29 +1,78 @@
 # YouthLink Network
 
-A modern, responsive landing website for **YouthLink Network**, a local Internet Service Provider (ISP) based in Konabari, Gazipur. The website showcases internet packages, company information, staff members, contact details, and provides quick communicatio n through WhatsApp.
+![homepage](/preview/home.png)
+
+A modern, responsive website for **YouthLink Network**, a local Internet Service Provider (ISP) based in Konabari, Gazipur, Bangladesh. The website allows visitors to explore internet packages, learn about the company, meet the team, and contact the provider through multiple channels.
+
+---
+
+## 🌐 Live Preview
+
+**Website:** https://youthlink-delta.vercel.app/
+
+---
+
+## 🚀 Highlights
+
+- Modern responsive design
+- Smooth Motion animations
+- WhatsApp ordering with pre-filled package details
+- Google Maps integration
+- JSON-driven content management
+- Reusable UI components
+- Sticky navigation
+- SEO-friendly metadata
+- Fully responsive across all devices
+
+---
+
+## 📸 Preview
+
+#### Home
+
+![homepage](/preview/home.png)
+
+#### Packages
+
+![Packages](/preview/packages.png)
+
+#### About Us
+
+![about page](/preview/about.png)
+
+#### Staff
+
+![Staff page](/preview/staff.png)
+
+---
 
 ## ✨ Features
 
 - 📱 Fully responsive design
-- ⚡ Modern UI built with Tailwind CSS
-- 📦 Internet package listings
-- 💬 One-click WhatsApp package ordering
-- 👥 Staff showcase page
-- ℹ️ About Us page
+- ⚡ Built with Next.js App Router
+- 🎨 Modern UI with Tailwind CSS
+- ✨ Smooth page animations using Motion
+- 📦 Internet package showcase
+- 🎬 Package highlight (DhakaFlix / SamOnline support)
+- 💬 One-click WhatsApp ordering with pre-filled messages
+- 👥 Staff directory
+- ℹ️ Company information page
 - 📞 Click-to-call hotline
 - 📧 Click-to-email support
-- 🗺️ Embedded Google Maps location
-- 🔍 SEO-friendly metadata with Next.js
-- 📂 JSON-based content management
+- 📍 Google Maps integration
+- 🔗 Social media links
+- 🔍 SEO-friendly metadata
+- 📂 JSON-driven content management
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
+- Motion
 - React Icons
 
 ---
@@ -38,19 +87,28 @@ src/
 │   ├── terms/
 │   ├── layout.tsx
 │   └── page.tsx
+│
 ├── components/
+│
 ├── data/
 │   ├── about.json
+│   ├── contact.json
+│   ├── footer.json
+│   ├── header.json
 │   ├── office.json
 │   ├── owner.json
 │   ├── packages.json
 │   └── staff.json
+│
+├── lib/
+│   └── animations.ts
+│
 ├── public/
 │   └── assets/
+│
 └── ui/
-│   ├── header/
-│   └── footer/
-└── preview/
+    ├── header/
+    └── footer/
 ```
 
 ---
@@ -63,7 +121,7 @@ Clone the repository:
 git clone https://github.com/sizan14789/youthlink.git
 ```
 
-Navigate to the project:
+Navigate into the project:
 
 ```bash
 cd youthlink
@@ -81,7 +139,7 @@ Run the development server:
 npm run dev
 ```
 
-Open your browser:
+Open:
 
 ```
 http://localhost:3000
@@ -92,30 +150,48 @@ http://localhost:3000
 ## 📄 Pages
 
 - Home
-- About
+- About Us
 - Staff
 - Terms & Conditions
 
 ---
 
-## 📞 Contact Features
+## 📞 Contact Options
 
-- WhatsApp integration with pre-filled order messages
-- Clickable email address
-- Clickable hotline
-- Embedded Google Maps office location
+Visitors can contact YouthLink Network through:
+
+- WhatsApp
+- Phone Call
+- Email
+- Google Maps
+
+---
+
+## 📦 Package Ordering
+
+Each internet package includes a **Buy Now** button that opens WhatsApp with a pre-filled order message containing:
+
+- Package name
+- Internet speed
+- Price
+- Duration
 
 ---
 
 ## 📂 Content Management
 
-Website content is stored in JSON files for easy updates.
+Most website content is stored inside JSON files, allowing updates without modifying React components.
 
-- `packages.json` – Internet packages
-- `staff.json` – Staff information
-- `about.json` – About page content
-- `office.json` – Office details
-- `owner.json` – Owner & social links
+| File            | Purpose                      |
+| --------------- | ---------------------------- |
+| `packages.json` | Internet package information |
+| `staff.json`    | Staff profiles               |
+| `about.json`    | About page content           |
+| `office.json`   | Office information           |
+| `owner.json`    | Owner & social links         |
+| `contact.json`  | Contact information          |
+| `header.json`   | Navigation items             |
+| `footer.json`   | Footer content               |
 
 ---
 
@@ -130,6 +206,22 @@ Optimized for:
 
 ---
 
+## ✨ Animations
+
+The interface uses Motion to provide subtle animations, including:
+
+- Hero text reveal
+- Staggered card animations
+- Scroll-triggered section transitions
+- Interactive buttons
+- Smooth component entrances
+
+Animations are designed to enhance the user experience while remaining lightweight and unobtrusive.
+
+---
+
 ## 📜 License
 
-This project was developed for **YouthLink Network** by **Md. Sizan Molla**. All rights reserved.
+This project was developed by **Md. Sizan Molla** for **YouthLink Network**.
+
+All rights reserved.
