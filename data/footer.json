@@ -1,0 +1,32 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "type": "hotline",
+      "key": "Hotline",
+      "value": "8801828650750",
+      "url": "tel:8801828650750"
+    },
+    {
+      "id": 2,
+      "type": "email",
+      "key": "Email",
+      "value": "mdferdowsimran01@gmail.com",
+      "url": "mailto:mdferdowsimran01@gmail.com"
+    },
+    {
+      "id": 3,
+      "type": "whatsapp",
+      "key": "WhatsApp",
+      "value": "8801828650750",
+      "url": "https://wa.me/8801828650750"
+    },
+    {
+      "id": 4,
+      "type": "location",
+      "key": "Location",
+      "value": "College Gate, Konabari, Gazipur",
+      "url": "https://maps.app.goo.gl/ZdnUVzFmb1nSjBBg9"
+    }
+  ]
+}
