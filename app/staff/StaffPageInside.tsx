@@ -114,19 +114,21 @@ export default function StaffPageInside() {
       <div className="mt-14 flex justify-center">
         <motion.button
           initial={{
+            opacity: 0,
             scale: 0,
           }}
           whileInView={{
+            opacity: 1,
             scale: 1,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 200,
-            damping: 22,
           }}
           viewport={{
             once: true,
             amount: 1,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 25,
           }}
         >
           <Link

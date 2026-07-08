@@ -52,5 +52,35 @@
   ],
   "commitment": {
     "desc": "At YouthLink Network, we're more than just an internet provider—we're your local connectivity partner. Whether you're attending online classes, running a business, enjoying your favorite movies, or gaming with friends, we're committed to delivering the speed, stability, and support you deserve. As our community grows, we'll continue investing in better infrastructure and better service for every customer."
-  }
+  },
+  "contact": [
+    {
+      "id": 1,
+      "type": "office_hours",
+      "url": "",
+      "key": "Office Hours",
+      "value": "10:00 AM - 8:00 PM"
+    },
+    {
+      "id": 2,
+      "type": "location",
+      "url": "https://maps.app.goo.gl/ZdnUVzFmb1nSjBBg9",
+      "key": "Location",
+      "value": "College Gate, Konabari, Gazipur"
+    },
+    {
+      "id": 3,
+      "type": "email",
+      "url": "mailto:mdferdowsimran01@gmail.com",
+      "key": "Email",
+      "value": "mdferdowsimran01@gmail.com"
+    },
+    {
+      "id": 4,
+      "type": "hotline",
+      "url": "tel:+8801828650750",
+      "key": "Hotline",
+      "value": "+8801828650750"
+    }
+  ]
 }

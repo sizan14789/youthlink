@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms adn Condition",
+  title: "Terms and Conditions",
   description: "Terms and condition page for YouthLink Network",
 };
 

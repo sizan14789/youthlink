@@ -16,7 +16,10 @@ export default function PackagesSection({
   const { whatsapp_number } = owner[0];
 
   return (
-    <div className="wrapper mb-30 pt-12!" ref={reference}>
+    <div
+      className="wrapper mb-30 pt-12! scroll-mt-8 sm:scroll-mt-16!"
+      ref={reference}
+    >
       <div className="text-center">
         <h2 className="text-4xl font-bold">Our Packages</h2>
         <p className="mt-3 txt">Choose the plan that best fits your needs.</p>
@@ -24,8 +27,16 @@ export default function PackagesSection({
       <div className="flex w-full justify-center">
         <div className="mt-4 mb-8 rounded-lg border border-green-200 bg-green-50 px-5 py-3 text-center text-sm text-green-800">
           🎬 All internet packages include free access to{" "}
-          <strong>DhakaFlix/SamOnline</strong> for fast local streaming and
-          downloads.
+          <strong>
+            <a
+              href="http://172.16.50.4/"
+              target="_blank"
+              className="hover:underline duration-150"
+            >
+              DhakaFlix/SamOnline
+            </a>
+          </strong>{" "}
+          for fast local streaming and downloads.
         </div>
       </div>
       <motion.div className="flex flex-wrap justify-center gap-6">

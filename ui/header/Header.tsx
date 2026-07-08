@@ -36,7 +36,7 @@ export default function Header() {
   };
 
   return (
-    <header className=" flex flex-col border-b items-center justify-center border-gray-300 min-w-svw bg-(--background) h-16 md:h-24">
+    <header className="sticky top-0 z-999 flex flex-col border-b items-center justify-center border-gray-300 min-w-svw bg-(--background) h-16 md:h-24">
       <div className="wrapper flex justify-between px-4!">
         <motion.div
           initial={{ opacity: 0, x: -15 }}
