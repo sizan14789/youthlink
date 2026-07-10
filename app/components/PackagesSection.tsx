@@ -7,6 +7,7 @@ import owner from "@/data/owner.json";
 import { RefObject } from "react";
 import { motion } from "motion/react";
 import { delay } from "motion";
+import Link from "next/link";
 
 export default function PackagesSection({
   reference,
@@ -39,7 +40,7 @@ export default function PackagesSection({
           for fast local streaming and downloads.
         </div>
       </div>
-      <motion.div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {data.map(
           ({ id, name, description, price, offerPrice, speed, duration }) => {
             const message = encodeURIComponent(
@@ -105,7 +106,16 @@ export default function PackagesSection({
             );
           },
         )}
-      </motion.div>
+      </div>
+      {/* If step by step guide required. CCs */}
+      {/* <div className="flex justify-center mt-4 mb-8 px-5 py-3 ">
+        <Link
+          href=""
+          className="text-center text-sm hover:underline hover:text-blue-700"
+        >
+          Follow this step by step guide to buying a package.
+        </Link>
+      </div> */}
     </div>
   );
 }

@@ -90,7 +90,7 @@ export default function AboutInner() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.35 }}
+          transition={{ duration: 0.35, delay: 0.1 }}
         >
           <h2 className="text-2xl font-semibold mb-3">Who We Are</h2>
           <p>{whoWeAre.para_1}</p>

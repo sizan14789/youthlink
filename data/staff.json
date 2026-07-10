@@ -5,7 +5,7 @@
     "role": "Co-Founder, Technical Support, Marketing Manager, Customer Support",
     "joining_year": 2014,
     "phone": null,
-    "image_url": "/assets/pfp_people.jpg"
+    "image_url": "/assets/kayes_selim.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "role": "Co-Founder, Marketing Manager",
     "joining_year": 2014,
     "phone": null,
-    "image_url": "/assets/pfp_people.jpg"
+    "image_url": "/assets/shohag_rana.jpg"
   },
   {
     "id": 3,
@@ -21,19 +21,19 @@
     "role": "Co-Founder",
     "joining_year": 2014,
     "phone": null,
-    "image_url": "/assets/pfp_people.jpg"
+    "image_url": "/assets/dulu_islam.jpg"
   },
   {
     "id": 4,
-    "name": "Md. Shahadat Islam",
+    "name": "Md. Shahadat Hossain",
     "role": "System Admin, Technical Support",
     "joining_year": 2018,
     "phone": null,
-    "image_url": "/assets/pfp_people.jpg"
+    "image_url": "/assets/shahadat_hossain.jpg"
   },
   {
     "id": 5,
-    "name": "Md. Ferdous Imran",
+    "name": "Md. Ferdows Imran",
     "role": "Operator & Management, Technical Support, Customer Support",
     "joining_year": 2022,
     "phone": "+8801828650750",
