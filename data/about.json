@@ -3,7 +3,7 @@
     "desc": "Proudly serving Konabari, Gazipur with fast, reliable broadband internet and responsive local customer support you can count on."
   },
   "whoWeAre": {
-    "para_1": "YouthLink Network is a local Internet Service Provider proudly serving the Konabari and surrounding Gazipur areas. We believe that reliable internet is essential for education, work, entertainment, and staying connected with family and friends. Our goal is simple—to provide stable, high-speed internet at an affordable price without compromising on quality.",
+    "para_1": "Founded in 2014, YouthLink Network is a local Internet Service Provider serving Konabari and nearby areas. Since our establishment, we have focused on delivering stable internet connections, transparent pricing, and responsive customer service to homes and businesses.",
     "para_2": "From home users and students to small businesses and offices, we work every day to ensure a smooth online experience. Our local support team is always ready to assist, continuously improving our network and customer service to meet the growing needs of our community."
   },
   "missionVision": [
@@ -36,8 +36,8 @@
     },
     {
       "id": 4,
-      "title": "Reliable Support",
-      "desc": "Our local support team responds quickly to technical issues so you can get back online with minimal interruption."
+      "title": "Years of Local Experience",
+      "desc": "Serving the local community with reliable internet and trusted customer support for years."
     },
     {
       "id": 5,
@@ -51,7 +51,7 @@
     }
   ],
   "commitment": {
-    "desc": "At YouthLink Network, we're more than just an internet provider—we're your local connectivity partner. Whether you're attending online classes, running a business, enjoying your favorite movies, or gaming with friends, we're committed to delivering the speed, stability, and support you deserve. As our community grows, we'll continue investing in better infrastructure and better service for every customer."
+    "desc": "With over a decade of experience serving our community, we remain committed to improving our network infrastructure and delivering dependable internet backed by friendly, responsive support."
   },
   "contact": [
     {

@@ -7,15 +7,6 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-type staff_data = {
-  id: number;
-  name: string;
-  role: string;
-  age: number;
-  image_url: string;
-  joining_year: number;
-};
-
 export default function StaffPageInside() {
   return (
     <>
@@ -60,55 +51,62 @@ export default function StaffPageInside() {
       </div>
 
       <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {staffData.map(
-          ({ id, name, age, role, image_url, joining_year }: staff_data) => (
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.4,
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 22,
-              }}
-              key={id}
-              className="card-border p-6 flex flex-col duration-300 hover:-translate-y-1 hover:shadow-lg"
-            >
-              <figure className="w-40 h-40 mx-auto overflow-hidden rounded-full border-2 border-gray-200">
-                <Image
-                  src={image_url}
-                  alt={`${name} profile`}
-                  width={160}
-                  height={160}
-                  loading="eager"
-                  className="w-full h-full object-cover object-center"
-                />
-              </figure>
+        {staffData.map(({ id, name, role, image_url, phone, joining_year }) => (
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+              amount: 0.4,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 22,
+            }}
+            key={id}
+            className="card-border p-6 flex flex-col duration-300 hover:-translate-y-1 hover:shadow-lg w-80 sm:w-auto justify-self-center"
+          >
+            <figure className="w-40 h-40 mx-auto overflow-hidden rounded-full border-2 border-gray-200">
+              <Image
+                src={image_url}
+                alt={`${name} profile`}
+                width={160}
+                height={160}
+                loading="eager"
+                className="w-full h-full object-cover object-center"
+              />
+            </figure>
 
-              <div className="mt-5 flex flex-col grow text-center">
-                <h2 className="text-2xl font-semibold">{name}</h2>
+            <div className="mt-5 flex flex-col grow text-center">
+              <h2 className="text-2xl font-semibold h-16">{name}</h2>
 
-                <p className="txt font-medium mt-1 line-clamp-2 min-h-12">
-                  {role}
-                </p>
+              <p className="txt font-medium mt-1 line-clamp-2 min-h-12">
+                {role}
+              </p>
 
-                <div className="mt-auto pt-4 border-t text-sm text-gray-500 space-y-1">
-                  <p>{age} years old</p>
-                  <p>Joined YouthLink Network in {joining_year}</p>
-                </div>
+              <div className="mt-auto pt-4 border-t text-sm text-gray-500 space-y-1">
+                {phone ? (
+                  <a
+                    href={"tel:" + phone}
+                    className="hover:underline hover:text-blue-700"
+                  >
+                    {phone}
+                  </a>
+                ) : (
+                  <p>TBA</p>
+                )}
+                <p>Joined YouthLink Network in {joining_year}</p>
               </div>
-            </motion.div>
-          ),
-        )}
+            </div>
+          </motion.div>
+        ))}
       </motion.div>
 
       <div className="mt-14 flex justify-center">

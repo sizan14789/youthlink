@@ -1,47 +1,29 @@
 [
   {
     "id": 1,
-    "name": "Starter Connect",
-    "description": "Perfect for everyday browsing, social media, and staying connected.",
-    "speed": "5 Mbps",
-    "price": 600,
-    "offerPrice": 500,
-    "duration": "30 Days"
+    "name": "Lite Connect",
+    "description": "Perfect for everyday browsing, online classes, and HD streaming.",
+    "price": 1200,
+    "offerPrice": 800,
+    "speed": "15 Mbps",
+    "duration": "1 Month"
   },
   {
     "id": 2,
-    "name": "Turbo Stream",
-    "description": "Smooth HD streaming and faster downloads for modern households.",
-    "speed": "10 Mbps",
-    "price": 900,
-    "offerPrice": 800,
-    "duration": "30 Days"
+    "name": "Turbo Connect",
+    "description": "Ideal for families, remote work, gaming, and multiple devices.",
+    "price": 1500,
+    "offerPrice": 1000,
+    "speed": "18 Mbps",
+    "duration": "1 Month"
   },
   {
     "id": 3,
-    "name": "Power User",
-    "description": "Built for multitasking, online classes, and remote work.",
-    "speed": "20 Mbps",
-    "price": 1400,
+    "name": "Ultra Connect",
+    "description": "Maximum performance for heavy streaming, gaming, and demanding users.",
+    "price": 2000,
     "offerPrice": 1200,
-    "duration": "30 Days"
-  },
-  {
-    "id": 4,
-    "name": "Ultra Gaming",
-    "description": "Low-latency performance for competitive gaming and live streaming.",
-    "speed": "50 Mbps",
-    "price": 2200,
-    "offerPrice": 1800,
-    "duration": "30 Days"
-  },
-  {
-    "id": 5,
-    "name": "Infinity Max",
-    "description": "Lightning-fast internet for power users, creators, and large families.",
-    "speed": "100 Mbps",
-    "price": 3500,
-    "offerPrice": 2800,
-    "duration": "30 Days"
+    "speed": "20 Mbps",
+    "duration": "1 Month"
   }
 ]

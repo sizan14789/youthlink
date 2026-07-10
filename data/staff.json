@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Ferdows Imran",
-    "image_url": "/assets/pfp_people.jpg",
-    "role": "Technology Operator",
-    "age": 21,
-    "joining_year": 2023
+    "name": "Md. Kayes Ahamed Selim",
+    "role": "Co-Founder, Technical Support, Marketing Manager, Customer Support",
+    "joining_year": 2014,
+    "phone": null,
+    "image_url": "/assets/pfp_people.jpg"
   },
   {
     "id": 2,
-    "name": "Suborno Sen",
-    "image_url": "/assets/pfp_people.jpg",
-    "role": "Customer Support Executive",
-    "age": 26,
-    "joining_year": 2023
+    "name": "Md. Shohag Rana",
+    "role": "Co-Founder, Marketing Manager",
+    "joining_year": 2014,
+    "phone": null,
+    "image_url": "/assets/pfp_people.jpg"
   },
   {
     "id": 3,
-    "name": "Tanvir Hasan",
-    "image_url": "/assets/pfp_people.jpg",
-    "role": "System Administrator",
-    "age": 34,
-    "joining_year": 2019
+    "name": "Md. Mafizul Islam Dulu",
+    "role": "Co-Founder",
+    "joining_year": 2014,
+    "phone": null,
+    "image_url": "/assets/pfp_people.jpg"
   },
   {
     "id": 4,
-    "name": "Farzana Akter",
-    "image_url": "/assets/pfp_people.jpg",
-    "role": "Marketing Manager",
-    "age": 31,
-    "joining_year": 2020
+    "name": "Md. Shahadat Islam",
+    "role": "System Admin, Technical Support",
+    "joining_year": 2018,
+    "phone": null,
+    "image_url": "/assets/pfp_people.jpg"
   },
   {
     "id": 5,
-    "name": "Sabbir Hossain",
-    "image_url": "/assets/pfp_people.jpg",
-    "role": "Technical Support Specialist",
-    "age": 27,
-    "joining_year": 2022
+    "name": "Md. Ferdous Imran",
+    "role": "Operator & Management, Technical Support, Customer Support",
+    "joining_year": 2022,
+    "phone": "+8801828650750",
+    "image_url": "/assets/ferdows.jpg"
   }
 ]
